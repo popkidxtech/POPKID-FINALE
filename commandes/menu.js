@@ -45,7 +45,7 @@ const date = moment().format('DD/MM/YYYY');
 ┃❍┃▸  *ʀᴀᴍ* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ┃❍│▸  *ʀᴜɴɴɪɴɢ ᴏɴ* : ${os.platform()}
 ┃❍│▸  *ᴏᴡɴᴇʀ* :  ${s.OWNER_NAME}
-┃❍│▸  *ᴅᴇᴠᴇʟᴏᴘᴇʀ* : ᴘᴏᴘᴋɪᴅ ᴛᴇᴄᴠ
+┃❍│▸  *ᴅᴇᴠᴇʟᴏᴘᴇʀ* : ᴘᴏᴘᴋɪᴅ ᴅᴇᴠs
 ┃❍│▸  *ᴛɪᴍᴇᴢᴏɴᴇ* : ${s.TZ}
 ┃❍╰───────────────
 ╰━━━━━━━━━━━━━━━┈⊷
