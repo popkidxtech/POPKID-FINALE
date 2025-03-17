@@ -348,32 +348,35 @@ setTimeout(() => {
       }
     });
     if (conf.AUTO_REACT_STATUS === "yes") {
-      _0x4eac21.ev.on("messages.upsert", async _0x144859 => {
-        const {
-          messages: _0x2e5d6c
-        } = _0x144859;
-        for (const _0x5dbc31 of _0x2e5d6c) {
-          if (_0x5dbc31.key && _0x5dbc31.key.remoteJid === "status@broadcast") {
-            try {
-              const _0x3e4f40 = _0x4eac21.user && _0x4eac21.user.id ? _0x4eac21.user.id.split(':')[0x0] + '@s.whatsapp.net' : null;
-              if (_0x3e4f40) {
-                await _0x4eac21.sendMessage(_0x5dbc31.key.remoteJid, {
-                  'react': {
-                    'key': _0x5dbc31.key,
-                    'text': '😇'
-                  }
-                }, {
-                  'statusJidList': [_0x5dbc31.key.participant, _0x3e4f40]
-                });
-                await new Promise(_0x43b2b7 => setTimeout(_0x43b2b7, 0x7d0));
-              }
-            } catch (_0x419bb4) {
-              console.error("Error decoding JID or sending message:", _0x419bb4);
+    zk.ev.on("messages.upsert", async (m) => {
+        const { messages } = m;
+        
+        for (const message of messages) {
+            if (message.key && message.key.remoteJid === "status@broadcast") {
+                try {
+                    const adams = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
+
+                    if (adams) {
+                        // React to the status with a green heart
+                        await zk.sendMessage(message.key.remoteJid, {
+                            react: {
+                                key: message.key,
+                                text: "🩵",
+                            },
+                        }, {
+                            statusJidList: [message.key.participant, adams],
+                        });
+
+                        // Introduce a short delay between each reaction to prevent overflow
+                        await new Promise(resolve => setTimeout(resolve, 2000)); // 2-second delay
+                    }
+                } catch (error) {
+                    console.error("Error decoding JID or sending message:", error);
+                }
             }
-          }
         }
-      });
-    }
+    });
+                                            }
     _0x4eac21.ev.on('messages.upsert', async _0x1dadf7 => {
       const {
         messages: _0xd55d7f
