@@ -182,7 +182,7 @@ zokou({
 
 // Define the command with aliases for video
 zokou({
-  nomCom: "video5",
+  nomCom: "video",
   aliases: ["videodoc", "film", "mp4"],
   categorie: "download",
   reaction: "🎞️"
@@ -277,7 +277,7 @@ zokou({
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈⊷
 🌐 *Bot Repo:* https://github.com/Popkiddevs/POPKID-XTECH
 
-> regards caseyrhodes`,
+> regards popkid`,
         document: { url: downloadUrl },
         mimetype: 'video/mp4',
         contextInfo: {
