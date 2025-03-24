@@ -5,7 +5,7 @@
     "logo": "https://raw.githubusercontent.com/HyHamza/HyHamza/refs/heads/main/Images/XByte-logo.png",
     "keywords": ["bot"],
     "documentation-link": "https://session.talkdrove.com",
-    "owner-verification":"talkdrove@gmail.com",
+    "owner-verification":"popkidbotdeployment@gmail.com",
   
     "env": {
       "SESSION_ID": {
@@ -34,7 +34,7 @@
       },
       "OWNER_NUMBER": {
         "description": "OWNER_NUMBER with country code (e.g, 9230723xxxxx)",
-        "value":"923072380xxxx",
+        "value":"254xxxx",
         "required": true
         
       },
@@ -107,7 +107,7 @@
       },
       "PREMIUM_USERS": {
         "description": "There are some commands which can only be used by the premium users, put premium users number without +, multiple numbers can be seperated by comma (,) (e.g, 923072380xxx, or 923072380xx,9234538003xx)",
-        "value":"972",
+        "value":"254",
         "required": false
         
       }
