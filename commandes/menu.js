@@ -35,20 +35,19 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭━━━《 *😇𝗣𝗢𝗣𝗞𝗜𝗗 𝗫𝗧𝗘𝗖𝗛😇* 》━━━┈⊷
-┃❍╭──────────────
+╭━━━☢︎︎*😇𝗣𝗢𝗣𝗞𝗜𝗗 𝗫𝗧𝗘𝗖𝗛😇*☢︎︎━━━❍
+┃❍╭──────────────߷
 ┃❍│▸  *ᴅᴀᴛᴇ*: ${date}
 ┃❍│▸  *ᴛɪᴍᴇ ɴᴏᴡ*: ${temps}
 ┃❍│▸  *ᴘʀᴇғɪx* : [  ${s.PREFIXE}  ]
 ┃❍┃▸  *ᴍᴏᴅᴇ* :  ${mode} mode
 ┃❍┃▸  *ᴘʟᴜɢɪɴs* : ${cm.length}
-┃❍┃▸  *ʀᴀᴍ* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ┃❍│▸  *ʀᴜɴɴɪɴɢ ᴏɴ* : ${os.platform()}
 ┃❍│▸  *ᴏᴡɴᴇʀ* :  ${s.OWNER_NAME}
-┃❍│▸  *ᴅᴇᴠᴇʟᴏᴘᴇʀ* : ᴘᴏᴘᴋɪᴅ ᴅᴇᴠs
+┃❍│▸  *ᴅᴇᴠᴇʟᴏᴘᴇʀ* : ᴘᴏᴘᴋɪᴅ ᴅᴇᴠs🤔
 ┃❍│▸  *ᴛɪᴍᴇᴢᴏɴᴇ* : ${s.TZ}
-┃❍╰───────────────
-╰━━━━━━━━━━━━━━━┈⊷
+┃❍╰───────────────߷
+╰━━━━━━━━━━━━━━━❍
 😇𝗣𝗢𝗣𝗞𝗜𝗗 𝗫𝗧𝗘𝗖𝗛 𝗕𝗢𝗧😇\n${readmore}`;
     
     
@@ -85,7 +84,7 @@ let menuMsg = `
         externalAdReply: {
           title: "𝗣𝗢𝗣𝗞𝗜𝗗 𝗣𝗥𝗢𝗝𝗘𝗖𝗧𝗦",
           body: "Follow my channel for more updates",
-          thumbnailUrl: "https://files.catbox.moe/yedfbr.jpg",
+          thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg",
           sourceUrl: conf.GURL,
           mediaType: 1,
             renderLargerThumbnail: true,
@@ -115,7 +114,7 @@ else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
         externalAdReply: {
           title: "𝗣𝗢𝗣𝗞𝗜𝗗 𝗣𝗥𝗢𝗝𝗘𝗖𝗧𝗦",
           body: "Follow my channel for more updates",
-          thumbnailUrl: "https://files.catbox.moe/bdewkf.jpg",
+          thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg",
           sourceUrl: conf.GURL,
           mediaType: 1,
             renderLargerThumbnail: true,
@@ -143,7 +142,7 @@ else {
         externalAdReply: {
           title: "𝗣𝗢𝗣𝗞𝗜𝗗𝗦 𝗣𝗥𝗢𝗝𝗘𝗖𝗧𝗦",
           body: "Follow my channel for more updates",
-          thumbnailUrl: "https://files.catbox.moe/bdewkf.jpg",
+          thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg",
           sourceUrl: conf.GURL,
           mediaType: 1,
             renderLargerThumbnail: true
